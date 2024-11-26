@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontendMasters</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom CSS -->
+    <style>
+        /* Custom CSS starts here */
+        * {
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        .navbar {
+            background: #501002;
+            justify-content: space-between;
+            font-family: calibri;
+            padding: 20px 50px 20px 100px;
+            border-bottom: 5px solid orangered;
+        }
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo a {
+            position: absolute;
+            height: auto;
+            left: 0px;
+            width: 250px;
+        }
+        .img {
+            width: 250px;
+            height: 50px;
+        }
+        .heading2 {
+            font-family: "Brush Script MT";
+            color: red;
+            font-size: xxx-large;
+        }
+        .heading1 {
+            font-family: Bahnschrift;
+            font-size: xx-large;
+            color: #fff;
+        }
+        .section-bg {
+            background-color: #3b2f2f; /* Blackish brown */
+            padding: 50px 0;
+        }
+        .wrapper {
+            width: 100%;
+            max-width: 400px;
+            background: #2c2a29;
+            color: azure;
+            border-radius: 10px;
+            padding: 20px 40px;
+            margin: auto;
+        }
+        .wrapper h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+        .input-box input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .input-box input::placeholder {
+            color: #1d1818;
+        }
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-20%);
+            font-size: 20px;
+        }
+        .wrapper .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+        }
+        .remember-forgot a {
+            color: #f60;
+            text-decoration: none;
+        }
+        .remember-forgot a:hover {
+            text-decoration: underline;
+        }
+        .wrapper .btn {
+            width: 100%;
+            height: 45px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+        .wrapper .register-link {
+            font-size: 14.5px;
+            text-align: center;
+            margin: 20px 0 15px;
+        }
+        .register-link p a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .register-link p a:hover {
+            text-decoration: underline;
+        }
+        /* Custom CSS ends here */
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand heading1" href="#">Frontend <span class="heading2">Masters</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Learn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><i class="bx bx-search fs-4 mx-2"></i></li>
+                    <li class="nav-item"><a href="#" class="btn btn-primary">Join Now</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section with Background Color -->
+    <section class="section-bg">
+        <div class="container">
+            <div class="wrapper">
+                <h1>Sign in to your account</h1>
+                <form>
+                    <label for="username">Username or Email</label>
+                    <div class="input-box mb-3">
+                        <input type="text" id="username" placeholder="Username" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <label for="password">Password</label>
+                    <div class="input-box mb-3">
+                        <input type="password" id="password" placeholder="Password" required>
+                        <i class='bx bx-show'></i>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember Me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="register-link">
+                        <p>Don't have an account? <a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
